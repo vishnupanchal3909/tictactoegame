@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Start_With_Giant_And_Sunzo">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="401dp"
+        android:layout_height="469dp"
+        android:background="@drawable/backimages"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView101"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:onClick="taptap11"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView102"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="taptap11"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView103"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="taptap11"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView104"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="taptap11"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView105"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="taptap11"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView106"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="taptap11"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView107"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="taptap11"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView108"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="taptap11"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView109"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="taptap11"
+            android:tag="8" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/first121"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/backborder"
+        android:src="@drawable/giant"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <ImageView
+        android:id="@+id/second121"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/backborder"
+        android:src="@drawable/sunzo"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toEndOf="@+id/first121"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <Button
+        android:id="@+id/button111"
+        android:layout_width="111dp"
+        android:layout_height="47dp"
+        android:background="@drawable/backwhite"
+        android:fontFamily="@font/average"
+        android:onClick="againexit"
+        android:text="EXIT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/second121"
+        app:layout_constraintStart_toEndOf="@+id/first121"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <Button
+        android:id="@+id/button112"
+        android:layout_width="111dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/backwhite"
+        android:fontFamily="@font/average"
+        android:onClick="again"
+        android:text="Play"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/second121"
+        app:layout_constraintStart_toEndOf="@+id/first121"
+        app:layout_constraintTop_toBottomOf="@+id/button111"
+        app:layout_constraintVertical_bias="0.33" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

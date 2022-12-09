@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2"
+    android:layout_height="match_parent"
+    tools:context=".Start_With_ChootaBheem_And_Kaliya">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="401dp"
+        android:layout_height="469dp"
+        android:background="@drawable/backimages"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView112"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:onClick="usertap"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="usertap"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="usertap"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="usertap"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView51"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="usertap"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView61"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="usertap"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView71"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="usertap"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView81"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="usertap"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView91"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="usertap"
+            android:tag="8" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/first100"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/backborder"
+        android:src="@drawable/bheem"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageView
+        android:id="@+id/second100"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/backborder"
+        android:src="@drawable/kaliya"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toEndOf="@+id/first100"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/play4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/backwhite"
+        android:fontFamily="@font/average"
+        android:onClick="repeat"
+        android:text="R-Play"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/second100"
+        app:layout_constraintStart_toEndOf="@+id/first100"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backwhite"
+        android:fontFamily="@font/average"
+        android:text="EXIT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="ppexit"
+        app:layout_constraintBottom_toTopOf="@+id/play4"
+        app:layout_constraintEnd_toStartOf="@+id/second100"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/first100"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
